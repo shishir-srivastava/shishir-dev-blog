@@ -6,5 +6,20 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  siteMetadata: {
+    title: "Shishir Srivastava",
+    description: "Shishir Srivastava's personal blog",
+    author: {
+      name: "Shishir Srivastava"
+    },
+    social: {
+      twitter: "_shishir01",
+      polywork: "shishir",
+      github: "shishir-srivastava",
+      linkedin: "shishir4"
+    }
+  },
+  plugins: [
+    "gatsby-plugin-typescript"
+  ],
 }
