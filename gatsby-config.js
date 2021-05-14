@@ -10,16 +10,22 @@ module.exports = {
     title: "Shishir Srivastava",
     description: "Shishir Srivastava's personal blog",
     author: {
-      name: "Shishir Srivastava"
+      name: "Shishir Srivastava",
     },
     social: {
       twitter: "_shishir01",
       polywork: "shishir",
       github: "shishir-srivastava",
-      linkedin: "shishir4"
-    }
+      linkedin: "shishir4",
+    },
   },
   plugins: [
-    "gatsby-plugin-typescript"
+    "gatsby-plugin-typescript",
+    {
+      resolve: "gatsby-plugin-typography",
+      options: {
+        pathToConfigModule: "src/utils/typography",
+      },
+    },
   ],
 }
