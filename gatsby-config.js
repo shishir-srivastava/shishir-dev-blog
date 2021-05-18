@@ -22,6 +22,13 @@ module.exports = {
   plugins: [
     "gatsby-plugin-typescript",
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "pages",
+        path: `${__dirname}/src/content/posts`,
+      },
+    },
+    {
       resolve: "gatsby-plugin-typography",
       options: {
         pathToConfigModule: "src/utils/typography",

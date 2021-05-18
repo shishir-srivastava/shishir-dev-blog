@@ -5,8 +5,10 @@ import Header from "../components/Header"
 const Home = (): React.ReactElement => {
   return (
     <>
-      <Header />
-      <div>Hello world! Shishir&apos;s blog is being setup.</div>
+      <div style={{ maxWidth: '960px', margin: '0 auto' }}>
+        <Header />
+        <div>Hello world! Shishir&apos;s blog is being setup.</div>
+      </div>
     </>
   )
 }
